@@ -1,6 +1,7 @@
 @charset "UTF-8";
-body {
-  font-family: 'Museo Sans light', sans-serif;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 img {
@@ -16,8 +17,32 @@ img {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
-  padding: 14px 33px 18px 29px;
-  margin-left: 30px;
+  padding: 18px 30 px;
+}
+
+.button:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.section-title {
+  font-size: 24px;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 16px;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 20px 26px;
+  font-size: 15px;
+  border-radius: 10px;
 }
 
 /*Импорт шрифтов*/
@@ -78,10 +103,11 @@ img {
   display: inline-block;
   /*font-family: "Museo Sans Cyrl -700"*/
   font-size: 20px;
-  font-weight: 400;
   color: #333333;
   text-decoration: none;
-  margin-top: 9px;
+  margin-top: 10px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 /*Импорт адаптиных настроек*/
@@ -102,6 +128,17 @@ img {
   }
   .hero-text {
     padding-right: 10px;
+  }
+  /*media offer*/
+  .offer {
+    background-size: cover;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 13px;
   }
 }
 
@@ -137,6 +174,14 @@ img {
   .hero-list__image {
     margin-right: 15px;
   }
+  /*media offer*/
+  .offer {
+    background: #fff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 567px) {
@@ -158,6 +203,7 @@ img {
 /*Импорт стилей главного блока*/
 .hero {
   padding: 50px 0;
+  background-color: #f5f5f5;
 }
 
 .hero-block {
@@ -167,9 +213,9 @@ img {
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
-  padding-right: 120px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-right: 100px;
 }
 
 .hero-text__title {
@@ -177,7 +223,8 @@ img {
   font-size: 41px;
   line-height: 55px;
   margin-bottom: 40px;
-  font-family: 'Museo Sans Light';
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .hero-text__subtitle {
@@ -202,6 +249,10 @@ img {
   margin-bottom: 25px;
 }
 
+.hero-list__item:last-child {
+  margin-bottom: 0;
+}
+
 .hero-list__image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,5 +272,54 @@ img {
 
 .hero-list__text {
   max-width: 300px;
+}
+
+/*Импорт стилей блока offer*/
+.offer {
+  background: url("../img/offer/offer/bg.png") no-repeat;
+  background-position: center-right;
+  background-size: contain;
+  position: relative;
+}
+
+.offer::before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+.offer__title {
+  max-width: 360px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+
+.offer__subtitle {
+  max-width: 250px;
+  margin-botton: 30px;
+}
+
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  min-height: 70px;
 }
 /*# sourceMappingURL=style.css.map */
