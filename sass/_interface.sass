@@ -1,7 +1,9 @@
 *
   box-sizing: border-box
 body
-  +reg
+ font-family: 'Museo Sans Light'
+ font-weight: 300
+
 img
   max-width: 100%   
 .container
@@ -11,15 +13,16 @@ img
   border-radius: 10px
   background-color: $main-color
   border: none
-  padding: 18px 30 px
+  padding: 18px 30px  
   &:hover
     background-color: lighten($main-color, 10%)
     cursor: pointer
 .section
   padding: 90px 0
   &-title
-    font-size: 24px
-    +bold
+   font-size: 24px
+   font-family: 'Museo Sans Bold'
+   font-weight: 700
   &-subtitle
     display: block
     font-size: 16px
