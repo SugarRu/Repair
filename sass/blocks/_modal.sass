@@ -11,14 +11,66 @@
   &-dialog
     position: relative
     margin: auto
-    max-width: 450px
-    width: 90%
-    min-height: 200px
+    max-width: 570px
+    min-height: 674px
     background-color: #fff
-    padding: 40px
+    padding: 80px 100px
+    align-items: center
+    text-align: center 
+    &__title
+      +bold
+      font-size: 22px
+      font-weight: 400
+      line-height: 33px
+    &__subtitle
+      display: block
+      +reg
+      font-size: 16px
+      font-weight: 400
+      line-height: 35px
+      margin: 35px 0
+    &__input     
+      margin-bottom: 15px
+      min-width: 370px
+    &__button
+      margin-top: 15px
+      min-width: 370px
+    &__callback
+      display: inline-block
+      margin-top: 33px
+    &__us
+      display: block
+      +reg
+      font-size: 15px
+      font-weight: 400
+      line-height: 20px
+      margin-bottom: 13px
+      padding: 0 50px
+    &__number
+      display: block
+      +bold
+      font-size: 24px
+      font-weight: 400
+      line-height: 24px
     &__close
       position: absolute
       top: 0
       right: 0
+// Кнопка прокрутки "В начало"
+.toTop 
+  width: 100px
+  border: 1px solid #ccc
+  border-radius: 10%
+  background-color: $main-color
+  text-align: center
+  padding: 5px
+  position: fixed
+  bottom: 10px //отступ кнопки от нижнего края страницы
+  left: 10px
+  cursor: pointer
+  display: none
+  color: #333
+  font-size: 11px
+  +bold
 
       

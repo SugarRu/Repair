@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
   <nav class="navbar">
     <div class="container">
@@ -22,7 +24,7 @@
             <span class="navbar__address">Калуга, Москва, МО
             </span> <!-- /.navbar__address -->
             <a href="tel:+7(495)42-251-31" class="navbar__phone">
-                +7(495)42-251-31
+              +7 (495) 42-251-31
             </a>
           </div>
           <button class="button navbar__button" id="button">
@@ -59,17 +61,17 @@
               </li>
               <li class="hero-list__item">
                 <div class="hero-list__image">
-                    <img src="img/hero/calculator.png" alt="калькулятор">
+                  <img src="img/hero/calculator.png" alt="калькулятор">
                 </div>
                 <span class="hero-list__text">Рассчитаем смету на работы и материалы в день обращения
-                  </span>
-              </li>                
+                </span>
+              </li>
               <li class="hero-list__item">
                 <div class="hero-list__image">
-                    <img src="img/hero/paint-board.png" alt="палитра">
+                  <img src="img/hero/paint-board.png" alt="палитра">
                 </div>
                 <span class="hero-list__text">Предложим более 100 вариантов исполнения дизайна Вашего жилья
-                  </span>
+                </span>
               </li>
             </ul>
             <!-- /.hero-text -->
@@ -92,19 +94,35 @@
             Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
           </h2>
           <!-- /.section-title -->
-          <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
+          <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного
+            дизайн-проекта!</span>
           <!-- /.section-subtitle -->
           <form action="#" class="form offer__form">
             <input type="text" class="input offer__input" placeholder="Ваше имя">
             <input type="tell" class="input offer__input" placeholder="Ваш телефон">
-            <button class="button offer__button">Получить бесплатный дизайн-проект             
+            <button class="button offer__button">Получить бесплатный дизайн-проект
             </button> <!-- /.button offer__button -->
+            <div class="offer-callback">
+              <span class="offer-callback__us">
+                Наш менеджер перезвонит Вам в течение 60 секунд
+              </span>
+              <div class="offer-callback__client">
+                <span class="offer-callback__info">
+                  или перезвоните нам сами
+                </span>
+                <span class="offer-callback__number">
+                  +7 (495) 42-251-31
+                </span>
+              </div>
+              <!-- /.offer-callback__client -->
+            </div>
+            <!-- /.offer__callback -->
 
           </form>
           <!-- /.form offer__form -->
         </div>
-         <!-- /.offer-block -->
-        </div>       
+        <!-- /.offer-block -->
+      </div>
       <!-- /.container -->
     </section>
     <!-- /.offer -->
@@ -112,15 +130,51 @@
 
   </main>
 
-   <div class="modal" id='modal'>
-     <div class="modal-dialog">
-       <button class="modal-dialog__close" id='close'>&times;</button>
-       <h4 class="modal-dialog__title">Всплывающее окно</h4>
-     </div>
-     <!-- /.modal-dialog -->
-   </div>
-   <!-- /.modal -->
-   <script src="js/main.js"></script>
-  
+  <div class="modal" id='modal'>
+    <div class="modal-dialog">
+      <button class="modal-dialog__close" id='close'>&times;</button>
+      <h4 class="modal-dialog__title">Узнайте точную стоимость
+        ремонта по телефону!</h4>
+      <span class="modal-dialog__subtitle">
+        Заполните поля ниже - мы свяжемся с Вами
+
+      </span> <!-- /.modal-dialog_subtitle -->
+
+      <form action="#" class="modal-dialog__form">
+        <input type="text" class="input modal-dialog__input" placeholder="Ваше имя">
+        <input type="tell" class="input modal-dialog__input" placeholder="Ваш телефон">
+        <button class="button modal-dialog__button">Узнать стоимость
+        </button> <!-- /.button offer__button -->
+
+        <div class="modal-dialog__callback">
+          <span class="modal-dialog__us">
+            Или Вы можете перезвонить нам сами
+            по телефону:
+          </span>
+          <span class="modal-dialog__number">
+            +7 (8182) 42-51-31
+          </span>
+        </div>
+        <!-- /.modal-dialog__callback -->
+      </form>
+      <!-- /.modal-dialog__form -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+  <!-- <script src="js/main.js"></script> -->
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+  </script>
+  <script src="js/modal.js"></script>
+
+  <!--Меню прокрутки  -->
+  <div ID = "toTop" class="toTop button">В начало</div>
+  <!--/. Меню прокрутки-->
+
 </body>
+
 </html>
