@@ -99,7 +99,7 @@
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного
             дизайн-проекта!</span>
           <!-- /.section-subtitle -->
-          <form action="mail.php" method="POST" class="form offer__form">
+          <form action="mail.php" method="POST" id="offer-form" class="form offer__form">
             <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
             <input type="tell" name="userphone" class="input offer__input" placeholder="Ваш телефон">
             <button class="button offer__button">Получить бесплатный дизайн-проект
@@ -444,7 +444,7 @@
 
 
 
-  <!-- <script src="js/main.js"></script> -->
+
 
 
   <!-- Подключение jQuery -->
@@ -452,88 +452,14 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
   </script>
+  <script src="js/main.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
 
 
-  <!--Slick слайдер-->
-  <script src="js/slick.min.js"></script>
-  <script>
-    new WOW().init();
-    $(document).ready(function () {
-
-      /*Валидация формы*/
-      $('#brif-form').validate({
-        rules: {
-          username: {
-            required: true,
-            minlength: 2,
-            maxlength: 15
-          },
-          phone: {
-            required: true
-          },
-          email: {
-            required: true,
-            email: true
-          }
-        },
-
-        messages: {
-          username: {
-            required: "Имя обязательно",
-            minlength: "Имя не короче 2 букв",
-            maxlength: "Имя слишком длинное"
-          },
-          phone: {
-            required: "Укажите телефон"
-          },
-          email: {
-            required: "Укажите email",
-            email: "Укажите верный eail "
-          }
-        },
-
-      });
-
-      /*Валидация маски*/
-      $('.phone').mask('+7 (999) 999-99-99');
-
-
-      /*Скрипт слайдера*/
-      $('.slider').slick({
-        slidesToShow: 3,
-        slideToScroll: 1,
-        prevArrow: $('.arrows__left'),
-        nextArrow: $('.arrows__right'),
-        responsive: [{
-            breakpoint: 1200,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-            }
-          },
-          {
-            breakpoint: 567,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      });
-    });
-  </script>
-  <!--/.Slick слайдер-->
 
 
   <!--Меню прокрутки  -->
