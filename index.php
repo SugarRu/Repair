@@ -99,9 +99,9 @@
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного
             дизайн-проекта!</span>
           <!-- /.section-subtitle -->
-          <form action="#" class="form offer__form">
-            <input type="text" class="input offer__input" placeholder="Ваше имя">
-            <input type="tell" class="input offer__input" placeholder="Ваш телефон">
+          <form action="mail.php" method="POST" class="form offer__form">
+            <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
+            <input type="tell" name="userphone" class="input offer__input" placeholder="Ваш телефон">
             <button class="button offer__button">Получить бесплатный дизайн-проект
             </button> <!-- /.button offer__button -->
             <div class="offer-callback">
