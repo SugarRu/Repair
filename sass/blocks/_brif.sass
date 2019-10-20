@@ -24,9 +24,9 @@
 .interview
   padding-right: 70px
   &__title
-    margin-top: 50px
     font-size: 22px
     +bold
+    margin-bottom: 46px
   &__subtitle
     display: block
     margin-bottom: 95px
@@ -53,15 +53,28 @@
       max-width: 400px
 .form
   &__title
-    margin-top: 50px
     font-size: 22px
     +bold
+    margin-bottom: 46px
   &__subtitle
     display: block
-    margin-bottom: 95px
+    margin-bottom: 60px
     font-size: 16px
   &__description
     display: block
+.contacts
+  &-list
+    &__text
+      +reg
+      font-size: 16px
+      font-weight: 400
+      line-height: 26px
+    &__phone
+      text-decoration: none
+      color: $text-color
+
+
+
   
 @media (max-width: 1200px)
   .brif
